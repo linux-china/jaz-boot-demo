@@ -122,6 +122,12 @@ jaz memory usage:
 root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar application.jar
 ```
 
+### Supported JVM versions
+
+- OpenJDK HotSpot JVM versions 8, 11, 17, and 21.
+- tested with the [Microsoft Build of OpenJDK](https://www.microsoft.com/openjdk)
+  and [Eclipse Temurin](https://adoptium.net/).
+
 # References
 
 * [jaz: Azure Command Launcher for Java](https://learn.microsoft.com/en-ca/java/jaz/overview)
