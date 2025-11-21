@@ -18,6 +18,18 @@ and jaz will manage the JVM configuration automatically
 
 ![jaz architecture](./jaz-architecture.png)
 
+### How jaz works
+
+The Azure Command Launcher for Java sits between your container or virtual machine startup command and the JVM. When you
+launch the tool, it:
+
+- Detects the cloud environment (for example, container limits and available memory).
+- Analyzes the workload type and selects best-fit JVM options.
+- Launches the Java process with optimized flags, such as: Heap sizing, Garbage collector selection and tuning. Logging
+  and diagnostics settings as needed.
+- Invisibly relays stdout, stderr, stdin, and OS signals to and from the Java process.
+- Monitors the Java process and relays its exit code when it terminates.
+
 # Get Started
 
 - Build project: `mvn -DskipTests clean package`
