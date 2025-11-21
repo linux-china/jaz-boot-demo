@@ -35,6 +35,24 @@ launch the tool, it:
 - Build project: `mvn -DskipTests clean package`
 - Start project with docker compose: `docker compose up -d`
 
+# Docker image build
+
+Please use following Dockerfile to build a docker image with jaz:
+
+```dockerfile
+# Use any Microsoft Build of OpenJDK base image
+FROM mcr.microsoft.com/openjdk/jdk:25-ubuntu
+
+# Add your application.jar
+COPY target/jaz-boot-demo-0.0.1-SNAPSHOT.jar /application.jar
+EXPOSE 8080
+
+# Use jaz to launch your Java application
+CMD ["jaz", "-jar", "application.jar"]
+```
+
+For more jaz openjdk images, please visit https://learn.microsoft.com/en-us/java/openjdk/containers.
+
 # jaz help
 
 - `JAZ_HELP=1 jaz`: print the java command that would be executed
@@ -109,4 +127,6 @@ root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar applic
 * [Announcing the Public Preview of Azure Command Launcher for Java](https://devblogs.microsoft.com/java/announcing-the-public-preview-of-azure-command-launcher-for-java/)
 * [From Complexity to Simplicity: Intelligent JVM Optimizations on Azure](https://devblogs.microsoft.com/java/from-complexity-to-simplicity-intelligent-jvm-optimizations-on-azure/)
 * [run-java.sh](https://github.com/fabric8io-images/run-java-sh): Universal startup script for plain Java applications
+* Microsoft Build of OpenJDK: https://www.microsoft.com/openjdk
+* Container images for the Microsoft Build of OpenJDK: https://learn.microsoft.com/en-us/java/openjdk/containers
 
