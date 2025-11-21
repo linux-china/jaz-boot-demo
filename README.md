@@ -83,8 +83,8 @@ go1.24.10 X:systemcrypto
 
 jaz memory usage:
 
-- VSZ: 2054500
-- RSS: 25308
+- VSZ(Virtual memory size): 2054500
+- RSS(Resident memory size): 25308
 
 ```
 root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar application.jar
