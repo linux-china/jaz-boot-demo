@@ -17,6 +17,11 @@ No code changes, no lock-in. Just replace: `java -Xmx1024m -jar myapp.jar` to `j
 and jaz will manage the JVM configuration automatically
 
 ![jaz architecture](./jaz-architecture.png)
+            
+# Get Started
+ 
+- Build project: `mvn -DskipTests clean package`
+- Start project with docker compose: `docker compose up -d`
 
 # FAQ
 
