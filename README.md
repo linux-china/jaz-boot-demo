@@ -57,6 +57,8 @@ For more jaz openjdk images, please visit https://learn.microsoft.com/en-us/java
 
 - `JAZ_HELP=1 jaz`: print the java command that would be executed
 - `JAZ_DRY_RUN=1 jaz`: print a help message
+- `JAZ_BYPASS=1 jaz`: bypass jaz optimization adjustments.
+- `JAZ_IGNORE_USER_TUNING=1 jaz`: trim user-provided tuning args. Allows jaz to tune the JVM in more cases.
 
 # FAQ
 
