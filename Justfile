@@ -13,3 +13,7 @@ container-start: image-build
 # Enter container with bash
 shell:
    docker compose exec -it jaz-boot bash
+
+# jaz container
+jaz-container:
+   docker run -it "mcr.microsoft.com/openjdk/jdk:21-ubuntu" bash
