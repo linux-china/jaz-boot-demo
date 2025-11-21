@@ -16,4 +16,4 @@ shell:
 
 # jaz container
 jaz-container:
-   docker run -it "mcr.microsoft.com/openjdk/jdk:21-ubuntu" bash
+   docker run -it "mcr.microsoft.com/openjdk/jdk:25-ubuntu" bash
