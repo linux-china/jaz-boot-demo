@@ -86,3 +86,5 @@ root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar applic
 * [jaz: Azure Command Launcher for Java](https://learn.microsoft.com/en-ca/java/jaz/overview)
 * [Announcing the Public Preview of Azure Command Launcher for Java](https://devblogs.microsoft.com/java/announcing-the-public-preview-of-azure-command-launcher-for-java/)
 * [From Complexity to Simplicity: Intelligent JVM Optimizations on Azure](https://devblogs.microsoft.com/java/from-complexity-to-simplicity-intelligent-jvm-optimizations-on-azure/) 
+* [run-java.sh](https://github.com/fabric8io-images/run-java-sh): Universal startup script for plain Java applications
+
