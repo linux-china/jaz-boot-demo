@@ -61,7 +61,7 @@ And jaz will launch the application with the following command:
 
 ### What is language to develop jaz?
 
-jaz is written in Golang, and binary size is about 10MB.
+jaz is written in Golang, and the binary size is about 10MB.
 
 ```
 root@e7d7c3b5596d:/# strings /usr/bin/jaz | grep -i "go1\."
