@@ -17,11 +17,16 @@ No code changes, no lock-in. Just replace: `java -Xmx1024m -jar myapp.jar` to `j
 and jaz will manage the JVM configuration automatically
 
 ![jaz architecture](./jaz-architecture.png)
-            
+
 # Get Started
- 
+
 - Build project: `mvn -DskipTests clean package`
 - Start project with docker compose: `docker compose up -d`
+
+# jaz help
+
+- `JAZ_HELP=1 jaz`: print the java command that would be executed
+- `JAZ_DRY_RUN=1 jaz`: print a help message
 
 # FAQ
 
@@ -40,6 +45,10 @@ Usage: java [options] <mainclass> [args...]
    or  java [options] -jar <jarfile> [args...]
            (to execute a jar file)
 ```
+
+You can run `JAZ_DRY_RUN=1 jaz` to verify the target command to run:
+
+`jaz would run: [/usr/bin/java -XX:+UseG1GC -Xmx5278m -XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=50 -XX:+UnlockExperimentalVMOptions -XX:+G1UseTimeBasedHeapSizing -XX:G1PeriodicGCInterval=10000]`
 
 ### How many processes are running in the container?
 
@@ -84,7 +93,8 @@ root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar applic
 # References
 
 * [jaz: Azure Command Launcher for Java](https://learn.microsoft.com/en-ca/java/jaz/overview)
+* [Announcing Azure Command Launcher for Java](https://devblogs.microsoft.com/java/announcing-azure-command-launcher-for-java/)
 * [Announcing the Public Preview of Azure Command Launcher for Java](https://devblogs.microsoft.com/java/announcing-the-public-preview-of-azure-command-launcher-for-java/)
-* [From Complexity to Simplicity: Intelligent JVM Optimizations on Azure](https://devblogs.microsoft.com/java/from-complexity-to-simplicity-intelligent-jvm-optimizations-on-azure/) 
+* [From Complexity to Simplicity: Intelligent JVM Optimizations on Azure](https://devblogs.microsoft.com/java/from-complexity-to-simplicity-intelligent-jvm-optimizations-on-azure/)
 * [run-java.sh](https://github.com/fabric8io-images/run-java-sh): Universal startup script for plain Java applications
 
