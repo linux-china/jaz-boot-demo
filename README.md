@@ -127,6 +127,18 @@ root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar applic
 - OpenJDK HotSpot JVM versions 8, 11, 17, and 21.
 - tested with the [Microsoft Build of OpenJDK](https://www.microsoft.com/openjdk)
   and [Eclipse Temurin](https://adoptium.net/).
+              
+### Install jaz on Ubuntu
+
+```shell
+$ ubuntu_release=`lsb_release -rs`
+$ wget https://packages.microsoft.com/config/ubuntu/${ubuntu_release}/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+$ sudo dpkg -i packages-microsoft-prod.deb
+$ sudo apt-get install apt-transport-https
+$ sudo apt-get update
+$ sudo apt-get install msopenjdk-25
+$ sudo apt-get install jaz
+```
 
 # References
 
