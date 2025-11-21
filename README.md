@@ -39,15 +39,6 @@ Usage: java [options] <mainclass> [args...]
            (to execute a class)
    or  java [options] -jar <jarfile> [args...]
            (to execute a jar file)
-   or  java [options] -m <module>[/<mainclass>] [args...]
-       java [options] --module <module>[/<mainclass>] [args...]
-           (to execute the main class in a module)
-   or  java [options] <sourcefile> [args]
-           (to execute a single source-file program)
-
- Arguments following the main class, source file, -jar <jarfile>,
- -m or --module <module>/<mainclass> are passed as the arguments to
- main class.
 ```
 
 ### How many processes are running in the container?
