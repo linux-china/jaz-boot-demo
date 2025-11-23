@@ -25,7 +25,7 @@ launch the tool, it:
 
 - Detects the cloud environment (for example, container limits and available memory).
 - Analyzes the workload type and selects best-fit JVM options.
-- Launches the Java process with optimized flags, such as: Heap sizing, Garbage collector selection and tuning. Logging
+- Launches the Java process with optimized flags, such as Heap sizing, Garbage collector selection and tuning. Logging
   and diagnostics settings as needed.
 - Invisibly relays stdout, stderr, stdin, and OS signals to and from the Java process.
 - Monitors the Java process and relays its exit code when it terminates.
@@ -37,7 +37,7 @@ launch the tool, it:
 
 # Docker image build
 
-Please use following Dockerfile to build a docker image with jaz:
+Please use the following Dockerfile to build a docker image with jaz:
 
 ```dockerfile
 # Use any Microsoft Build of OpenJDK base image
