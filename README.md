@@ -149,4 +149,5 @@ $ sudo apt-get install jaz
 * [run-java.sh](https://github.com/fabric8io-images/run-java-sh): Universal startup script for plain Java applications
 * Microsoft Build of OpenJDK: https://www.microsoft.com/openjdk
 * Container images for the Microsoft Build of OpenJDK: https://learn.microsoft.com/en-us/java/openjdk/containers
+* Supercharge Your Quarkus Containers: Auto-Tune JVM Memory with Microsoft JAZ - https://www.the-main-thread.com/p/quarkus-java-jaz-auto-tuning-container-memory
 
