@@ -124,7 +124,7 @@ root         1  0.0  0.3 2054500 25500 ?       Ssl  03:41   0:00 jaz -jar applic
 
 ### Supported JVM versions
 
-- OpenJDK HotSpot JVM versions 8, 11, 17, and 21.
+- OpenJDK HotSpot JVM versions 8, 11, 17, 21, and 25
 - tested with the [Microsoft Build of OpenJDK](https://www.microsoft.com/openjdk)
   and [Eclipse Temurin](https://adoptium.net/).
               
