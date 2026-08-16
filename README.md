@@ -142,10 +142,12 @@ $ sudo apt-get install jaz
 
 # References
 
+* [jaz](https://github.com/microsoft/jaz): Azure Command Launcher for Java
 * [jaz: Azure Command Launcher for Java](https://learn.microsoft.com/en-ca/java/jaz/overview)
 * [Announcing Azure Command Launcher for Java](https://devblogs.microsoft.com/java/announcing-azure-command-launcher-for-java/)
 * [Announcing the Public Preview of Azure Command Launcher for Java](https://devblogs.microsoft.com/java/announcing-the-public-preview-of-azure-command-launcher-for-java/)
 * [From Complexity to Simplicity: Intelligent JVM Optimizations on Azure](https://devblogs.microsoft.com/java/from-complexity-to-simplicity-intelligent-jvm-optimizations-on-azure/)
+* How to install Azure Command Launcher for Java: https://learn.microsoft.com/en-us/java/jaz/install
 * [run-java.sh](https://github.com/fabric8io-images/run-java-sh): Universal startup script for plain Java applications
 * Microsoft Build of OpenJDK: https://www.microsoft.com/openjdk
 * Container images for the Microsoft Build of OpenJDK: https://learn.microsoft.com/en-us/java/openjdk/containers
