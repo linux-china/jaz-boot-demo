@@ -68,9 +68,9 @@ Almost yes. jaz is a java shim that launches your application with the correct J
 
 ```
 root@727b1c5114b1:/usr/bin# ./jaz --version
-openjdk 21.0.9 2025-10-21 LTS
-OpenJDK Runtime Environment Microsoft-12574458 (build 21.0.9+10-LTS)
-OpenJDK 64-Bit Server VM Microsoft-12574458 (build 21.0.9+10-LTS, mixed mode, sharing)
+openjdk 25.0.4.1 2026-08-18 LTS
+OpenJDK Runtime Environment Microsoft-14951852 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Microsoft-14951852 (build 25.0.4.1+1-LTS, mixed mode, sharing)
 root@727b1c5114b1:/# jaz --help
 Usage: java [options] <mainclass> [args...]
            (to execute a class)
